@@ -1,0 +1,128 @@
+/*GLOBAL */
+* {
+	-webkit-box-sizing: border-box;
+	    box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+}
+
+
+
+body {
+	font-family: "Open Sans", Arial;
+	margin: 0;
+	line-height: 1.8;
+	color: #666;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+.container {
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 25px;
+	background-color: white;
+
+}
+
+
+
+/* HEADER */
+header nav {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	justify-content: space-around;
+    background-color: #fa9702;
+}
+
+header nav a {
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	            -ms-grid-row-align: center;
+	        align-self: center;
+	color: #fcfcfc;
+	font-family: "Candal";
+	font-size: 1.4em;
+}
+header nav a:hover{
+	color: #008e97;
+}
+/*main*/
+#animation img{
+	-webkit-transition:-webkit-transform .9s; 
+  -moz-transition:-moz-transform .9s;       
+  -o-transition:-o-transform .9s;           
+  -ms-transition:-ms-transform .9s;        
+  transition:transform .9s;
+}
+
+#animation img:hover{
+	-webkit-transform:rotateZ(360deg), rotateY(360deg); 
+	-moz-transform:rotateZ(360deg), rotateY(360deg); 
+	-o-transform:rotateZ(360deg), rotateY(360deg);  
+	-ms-transform:rotateZ(360deg), rotateY(360deg);  
+	transform:  rotateZ(114deg);
+	
+}
+
+#Mainlogo{
+	width: 89%;
+	height: auto;
+}
+main{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin: 110px ;
+}
+main h2{
+	font-family: "Candal";
+	color: #008e97;
+}
+main h2:hover{
+	color: #fa9702;
+}
+
+/* footer*/
+footer nav p {
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	            -ms-grid-row-align: center;
+	        align-self: center;
+	color: #fcfcfc;
+	font-family: "Candal";
+	font-size: .8em;
+}
+
+
+footer nav {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	    justify-content: space-around;
+    background-color: #055cbe;
+  
+}
+
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 1024px) {
+	header nav a {
+		padding: 15px;
+	}
+	#tagline {
+		padding: 50px 25px;
+	}
+	header nav, .flex, footer nav {
+		-ms-flex-direction: column;
+		    -webkit-box-orient: vertical;
+		    -webkit-box-direction: normal;
+		        flex-direction: column;
+	}
+
+}
